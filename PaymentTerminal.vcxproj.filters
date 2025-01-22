@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PaymentTerminal">
+      <UniqueIdentifier>{b4c8ce5d-9fc9-409b-9c74-154a7764fdf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageProcessor">
+      <UniqueIdentifier>{b564e227-c770-439e-91a8-76669bf24c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{9f5c110a-22d9-4d33-b933-cf2e13360311}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PaymentTerminal.cpp">
+      <Filter>PaymentTerminal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PaymentTerminal.h">
+      <Filter>PaymentTerminal</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
