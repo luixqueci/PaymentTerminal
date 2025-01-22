@@ -124,19 +124,22 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Core.cpp" />
-    <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="MessageProcessor.cpp" />
-    <ClCompile Include="PaymentTerminal.cpp" />
+    <ClCompile Include="Backend\Backend.cpp" />
+    <ClCompile Include="Core\HAL.cpp" />
+    <ClCompile Include="Logger\Logger.cpp" />
+    <ClCompile Include="MessageProcessor\MessageProcessor.cpp" />
+    <ClCompile Include="PaymentTerminal\PaymentTerminal.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core.h" />
-    <ClInclude Include="Logger.h" />
-    <ClInclude Include="MessageProcessor.h" />
-    <ClInclude Include="PaymentTerminal.h" />
+    <ClInclude Include="Backend\Backend.h" />
+    <ClInclude Include="Core\HAL.h" />
+    <ClInclude Include="Logger\Logger.h" />
+    <ClInclude Include="MessageProcessor\MessageProcessor.h" />
+    <ClInclude Include="PaymentTerminal\PaymentTerminal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

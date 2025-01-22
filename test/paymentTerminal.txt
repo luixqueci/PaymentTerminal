@@ -1,0 +1,15 @@
+MSG001:Transação de R$112
+MSG002:Transação de R$12
+MSG003:Transação de R$3
+MSGERR:Transação de R$11
+MSG005:Transação de R$310
+MSG006:Transação de R$22
+SERR001:Transação de R$222
+MSG008:Transação de R$22
+MSG009:Transação de R$124
+MSG010:Transação de R$22
+MSG011:Transação de R$221
+ERR:non identifier error
+MSG012:Transação de R$22
+MSG013:Transação de R$22
+MSG014:Transação de R$211

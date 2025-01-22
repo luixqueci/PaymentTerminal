@@ -1,45 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="PaymentTerminal">
-      <UniqueIdentifier>{b4c8ce5d-9fc9-409b-9c74-154a7764fdf5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="MessageProcessor">
       <UniqueIdentifier>{b564e227-c770-439e-91a8-76669bf24c34}</UniqueIdentifier>
     </Filter>
     <Filter Include="Logger">
       <UniqueIdentifier>{9f5c110a-22d9-4d33-b933-cf2e13360311}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core">
+    <Filter Include="Backend">
+      <UniqueIdentifier>{b7935340-dc34-42c9-8f0a-1f8020b6d663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PaymentTerminal">
+      <UniqueIdentifier>{b4c8ce5d-9fc9-409b-9c74-154a7764fdf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL">
       <UniqueIdentifier>{9b387f58-7272-4860-af68-c0dd32044603}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PaymentTerminal.cpp">
-      <Filter>PaymentTerminal</Filter>
+    <ClCompile Include="Backend\Backend.cpp">
+      <Filter>Backend</Filter>
     </ClCompile>
-    <ClCompile Include="Core.cpp">
-      <Filter>Core</Filter>
+    <ClCompile Include="Core\HAL.cpp">
+      <Filter>HAL</Filter>
     </ClCompile>
-    <ClCompile Include="MessageProcessor.cpp">
+    <ClCompile Include="Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageProcessor\MessageProcessor.cpp">
       <Filter>MessageProcessor</Filter>
     </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Logger</Filter>
+    <ClCompile Include="PaymentTerminal\PaymentTerminal.cpp">
+      <Filter>PaymentTerminal</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PaymentTerminal.h">
-      <Filter>PaymentTerminal</Filter>
+    <ClInclude Include="Backend\Backend.h">
+      <Filter>Backend</Filter>
     </ClInclude>
-    <ClInclude Include="Core.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="Core\HAL.h">
+      <Filter>HAL</Filter>
     </ClInclude>
-    <ClInclude Include="MessageProcessor.h">
+    <ClInclude Include="Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageProcessor\MessageProcessor.h">
       <Filter>MessageProcessor</Filter>
     </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>Logger</Filter>
+    <ClInclude Include="PaymentTerminal\PaymentTerminal.h">
+      <Filter>PaymentTerminal</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
