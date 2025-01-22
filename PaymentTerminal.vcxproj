@@ -127,9 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="MessageProcessor.cpp" />
     <ClCompile Include="PaymentTerminal.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MessageProcessor.h" />
     <ClInclude Include="PaymentTerminal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
