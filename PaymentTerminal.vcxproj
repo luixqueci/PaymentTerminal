@@ -128,15 +128,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Backend\Backend.cpp" />
-    <ClCompile Include="Core\HAL.cpp" />
+    <ClCompile Include="Backend\MockBackend.cpp" />
+    <ClCompile Include="Connection\ConnectionManager.cpp" />
+    <ClCompile Include="Connection\Serial\SerialConnection.cpp" />
+    <ClCompile Include="Connection\USB\USBConnection.cpp" />
+    <ClCompile Include="HAL\HAL.cpp" />
     <ClCompile Include="Logger\Logger.cpp" />
     <ClCompile Include="MessageProcessor\MessageProcessor.cpp" />
     <ClCompile Include="PaymentTerminal\PaymentTerminal.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Backend\Backend.h" />
-    <ClInclude Include="Core\HAL.h" />
+    <ClInclude Include="Backend\IBackend.h" />
+    <ClInclude Include="Backend\MockBackend.h" />
+    <ClInclude Include="Connection\ConnectionManager.h" />
+    <ClInclude Include="Connection\IConnection.h" />
+    <ClInclude Include="Connection\Serial\SerialConnection.h" />
+    <ClInclude Include="Connection\USB\USBConnection.h" />
+    <ClInclude Include="HAL\HAL.h" />
     <ClInclude Include="Logger\Logger.h" />
     <ClInclude Include="MessageProcessor\MessageProcessor.h" />
     <ClInclude Include="PaymentTerminal\PaymentTerminal.h" />

@@ -16,14 +16,17 @@
     <Filter Include="HAL">
       <UniqueIdentifier>{9b387f58-7272-4860-af68-c0dd32044603}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Connection">
+      <UniqueIdentifier>{daec3b87-54ca-41de-8aa5-24b1a5992ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connection\USB">
+      <UniqueIdentifier>{c78a2f6a-6158-4348-976e-83668d0a010f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connection\Serial">
+      <UniqueIdentifier>{8b1425f6-2513-403b-b8d0-016560498859}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Backend\Backend.cpp">
-      <Filter>Backend</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\HAL.cpp">
-      <Filter>HAL</Filter>
-    </ClCompile>
     <ClCompile Include="Logger\Logger.cpp">
       <Filter>Logger</Filter>
     </ClCompile>
@@ -33,14 +36,23 @@
     <ClCompile Include="PaymentTerminal\PaymentTerminal.cpp">
       <Filter>PaymentTerminal</Filter>
     </ClCompile>
+    <ClCompile Include="Connection\Serial\SerialConnection.cpp">
+      <Filter>Connection\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection\USB\USBConnection.cpp">
+      <Filter>Connection\USB</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection\ConnectionManager.cpp">
+      <Filter>Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL.cpp">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Backend\MockBackend.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Backend\Backend.h">
-      <Filter>Backend</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\HAL.h">
-      <Filter>HAL</Filter>
-    </ClInclude>
     <ClInclude Include="Logger\Logger.h">
       <Filter>Logger</Filter>
     </ClInclude>
@@ -49,6 +61,27 @@
     </ClInclude>
     <ClInclude Include="PaymentTerminal\PaymentTerminal.h">
       <Filter>PaymentTerminal</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection\Serial\SerialConnection.h">
+      <Filter>Connection\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection\USB\USBConnection.h">
+      <Filter>Connection\USB</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection\ConnectionManager.h">
+      <Filter>Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection\IConnection.h">
+      <Filter>Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\HAL.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Backend\IBackend.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="Backend\MockBackend.h">
+      <Filter>Backend</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

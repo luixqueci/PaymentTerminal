@@ -10,7 +10,6 @@ class Backend
 {
 public:
     Backend(const std::string& logFilename);
-    Backend();
     /**
 	* @brief simula o recebimento de mensagens pelo backend
     */
